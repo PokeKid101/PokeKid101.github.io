@@ -6,12 +6,12 @@
         <title>Navigation Bar Test</title>
         <link rel="icon" type="image/x-icon" href="../ShinyL Rotom.png">
         <link rel="stylesheet" href="../mainStyle.css">
-        <script src="loadNavBar.js"></script>
+        <script src="loadNavBar.js">includeHTML()</script>
         
     </head>
     <body>
         
-        <div id="header" w3-include-html="navigationBar.html"></div>
+        <div w3-include-html="navigationBar.html"></div>
         
         <div>
             <p>Hi there! You're not supposed to see this.</p>
@@ -26,8 +26,6 @@
             <p>Thanks for stopping by. See ya.</p>
             
         </div>
-        
-        <script>includeHTML()</script>
         
     </body>
 </html>

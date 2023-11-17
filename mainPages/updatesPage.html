@@ -6,41 +6,22 @@
         <title>Update Page</title>
         <link rel="icon" type="image/x-icon" href="../ShinyL Rotom.png">
         <link rel="stylesheet" href="../mainStyle.css">
+        <script src="../loadNavigationBar/loadNavBar.js"></script>
         
     </head>
     <body>
         
-        <!-- Header that appears on each web page for navigation -->
-        <header id="navHead">
-            <table id='navTable'>
-                <tr>
-                    <td><a href="../index.html">Home Page</a></td>
-                    <td><a href="../mainPages/mathHome.html">Easy Math</a></td>
-                    <td><a href="../mainPages/teritaProject.html">Terita Project</a></td>
-                    <td><a href="../mainPages/sideProjects.html">Side Projects</a></td>
-                    <td><a href="../mainPages/updatesPage.html">Updates</a></td>
-                    <td><a href="../mainPages/aboutMe.html">About</a></td>
-                    
-                </tr>
-            </table>            
-        </header>
-        
+        <div id="navigationBar"></div>
         
         <div id="pageContent">
-            <h1>Update Page</h1>
-            <p>List of all updates and what they were</p>
-            <div id='recentUpdate'>
-                <h3>Lastest Update: TBD</h3>
-                <ul>
-                    <li>Terita Project Nav Page set up</li>
-                    <li>Terita Project: Locations Page set up</li>
-                                        
-                    <li>Side Projects Nav Page set up</li>
-                    <li>Side Projects: Hextraction Page set up</li>
-                    <li>Side Projects: Inscryption Mod Page set up</li>
+            <div id="updatePage">
+                <h1>Update Page</h1>
+                <p>List of all past updates and what they were.
+                    Sorted with the most recent updates on top, current updates are shown on the <a href="../index.html">Home Page</a>.
                     
-                </ul>
-                
+                </p>
+            </div>
+            <div id='pastUpdate'>
                 <h3>9-27-2023 Info:</h3>
                 <ul>
                     <li>Coding foundation for Geometry functions</li>
@@ -64,6 +45,8 @@
             </div>
                         
         </div>
+        
+        <script>updateNavBar();</script>
         
     </body>
 </html>

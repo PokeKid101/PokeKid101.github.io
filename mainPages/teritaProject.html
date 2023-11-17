@@ -6,58 +6,53 @@
         <title>Terita Project</title>
         <link rel="icon" type="image/x-icon" href="../ShinyL Rotom.png">
         <link rel="stylesheet" href="../mainStyle.css">
+        <link rel="stylesheet" href="../teritaProject/teritaStyle.css">
+        <script src="../loadNavigationBar/loadNavBar.js"></script>
+        <script src="../teritaProject/teritaNavigation.js"></script>
         
     </head>
     <body>
         
-        <!-- Header that appears on each web page for navigation -->
-        <header id="navHead">
-            <table id='navTable'>
-                <tr>
-                    <td><a href="../index.html">Home Page</a></td>
-                    <td><a href="../mainPages/mathHome.html">Easy Math</a></td>
-                    <td><a href="../mainPages/teritaProject.html">Terita Project</a></td>
-                    <td><a href="../mainPages/sideProjects.html">Side Projects</a></td>
-                    <td><a href="../mainPages/updatesPage.html">Updates</a></td>
-                    <td><a href="../mainPages/aboutMe.html">About</a></td>
-                    
-                </tr>
-            </table>            
-        </header>
-        
+        <div id="navigationBar"></div>
+        <div id='teritaNavigationBar'></div>
         
         <div id="pageContent">
-            <h1>Terita Project</h1>
-            <p>
-               These pages are dedicated to the many ideas I have for games I would like to develop.
-               All these games are located in the same universe, and thus I refer to them all as the Terita Project.
-               For now I'll be filling these pages with random ideas and thoughts that I have for these games, and using this site as a base to develop the world of Terita.
-               
-            </p>
-            <p>
-                The majority of my ideas will go under <b>General Ideas</b>, as that is dedicated for all the loose ideas I have.
-                Ideas under <b>General Ideas</b> are considered non-canonical for the overall lore of Terita, with the actual canonical events taking place within the games affiliated with Terita.
-                
-            </p>
-            
-            <h2>General Ideas</h2>
-            <div id="teritaIdeasNav">
-                <h3><a href="../teritaProject/locations.html">Locations</a></h3>
-                <h3><a href="../teritaProject/characters.html">Characters</a></h3>
-                <h3><a href="">Peoples</a></h3>
-                <h3><a href="">Generic Lore</a></h3>
-                
+            <div id="title">
+                <h1>Terita Project</h1>
+                <p>
+                   These pages are dedicated to the many ideas I have for games I would like to develop.
+                   All these games are located in the same universe, and I refer to them all as the Terita Project.
+                   For now I'll be filling these pages with random ideas and thoughts that I have for these games, and using this site as a base to develop the world of Terita.
+
+                </p>
+                <p>
+                    The majority of my ideas are stuck in my head, but I'll be trying my best to update this site both as a way to generate interest and to have organization for myself.
+                    There is a list of games and a brief description of what they are, but they are projects that I intend to come back to.
+                    If I do end up working on one of these projects, it will be both small scale and might not have much emphasis on the lore.
+                </p>
             </div>
             
-            <h2>Game Ideas</h2>
-            <div id="teritaGamesNav">
-                <h3><a href="">Terita</a></h3>
-                <h3><a href="">"Warped Reality"</a></h3>
-                <h3><a href="">Tavern Builder/Card Game</a></h3>
-
-            </div>         
+            <div id="recentIdeas">
+                <h3>Recent Ideas</h3>
+                <p>This is where I would put some of my recent ideas.
+                   Not sure though, they are still half-baked.
+                   However to be fair, I'm not the best baker.
+                </p>
+            </div>
+            
+            <div id="gameIdeas">
+                <h2>Game Ideas</h2>
+                <h3>Terita</h3>
+                <h3>"Warped Reality"</h3>
+                <h3>Tavern Builder/Card Game</h3>
+            </div>
                         
         </div>
-                
+            
+        <script>
+            updateNavBar();
+            updateTeritaNavBar();
+        </script>
+        
     </body>
 </html>

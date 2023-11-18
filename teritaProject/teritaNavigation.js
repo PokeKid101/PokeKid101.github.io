@@ -5,18 +5,18 @@ let teritaBar = "teritaNavigationBar";
 let terita_Links = 
     ["mainPages/teritaProject.html", 
      "teritaProject/characters.html",
-     // People
-     "teritaProject/locations.html"
-     // Lore
+     "teritaProject/peoples.html",
+     "teritaProject/locations.html",
+     "teritaProject/lore.html"
 ];
 // List of all text displayed in navigation bar
 // Text alligns with links on href_Links
 let terita_DisplayText = 
     ["Terita Home",
      "Characters",
-     //"Peoples",
-     "Locations"
-     //"Lore"
+     "Peoples",
+     "Locations",
+     "Lore"
 ];
 
 function updateTeritaNavBar(){

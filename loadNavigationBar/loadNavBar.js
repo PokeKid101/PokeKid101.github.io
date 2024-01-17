@@ -1,27 +1,50 @@
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain attribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
+// Name of the element holding this navigation bar
+let navigationBar = "navigationBar";
+
+// List of all pages on navigation bar
+let mainNav_Links = 
+    ["index.html", 
+     "mainPages/mathHome.html",
+     "mainPages/teritaProject.html",
+     "mainPages/pokeTTRPG.html",
+     "mainPages/sideProjects.html",
+     "mainPages/updatesPage.html",
+     "mainPages/aboutMe.html"
+];
+// List of all text displayed in navigation bar
+// Text alligns with links on href_Links
+let mainNav_DisplayText = 
+    ["Home Page",
+     "Easy Math",
+     "Terita Project",
+     "Poke TTRPG",
+     "Side Projects",
+     "Updates",
+     "About Me"
+];
+
+function updateNavBar(){
+    let navElement = document.getElementById(navigationBar);
+    let navHTML = "<nav>";
+    let hrefLinks = mainNav_Links;
+    let displayText = mainNav_DisplayText;
+    
+    for(var i = 0; i < hrefLinks.length; i++){
+        navHTML = navHTML + "<a href='../" + hrefLinks[i] + "'>" + displayText[i] + "</a>";
     }
-  }
-};
+    navHTML = navHTML + "</nav>";
+    navElement.innerHTML = navHTML;   
+}
+
+function updateNavBarHome(){
+    let navElement = document.getElementById(navigationBar);
+    let navHTML = "<nav>";
+    let hrefLinks = mainNav_Links;
+    let displayText = mainNav_DisplayText;
+    
+    for(var i = 0; i < hrefLinks.length; i++){
+        navHTML = navHTML + "<a href='" + hrefLinks[i] + "'>" + displayText[i] + "</a>";
+    }
+    navHTML = navHTML + "</nav>";
+    navElement.innerHTML = navHTML;   
+}

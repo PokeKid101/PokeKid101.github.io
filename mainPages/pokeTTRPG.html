@@ -7,23 +7,126 @@
         <link rel="icon" type="image/x-icon" href="../ShinyL Rotom.png">
         <link rel="stylesheet" href="../mainStyle.css">
         <script src="../loadNavigationBar/loadNavBar.js"></script>
+        <script src="../pokeTTRPG/pokeTTRPGNavigation.js"></script>
         
     </head>
     <body>
         <!-- Place holder for the navigation bar -->
         <!-- Content added with JavaScript -->
         <div id="navigationBar"></div>
+        <div id="pokeTTRPGNavigationBar" class="subNavigation"></div>
         
         <div id="pageContent">
-            <h1>Pokemon TTRPG</h1>
-            <p>Developing my own Pokemon TTRPG system. 
-               Couldn't find one that I was happy with, so I'm making my own.
-               WIP, as many other things are.
-            </p>
+            
+            <div id="title">
+                <h1>Landon's Pokemon TTRPG</h1>
+                <p>Currently developing my own Pokemon TTRPG system.
+                   Played a couple Pokemon TTRPG systems and seem more, but didn't really like any of them.
+                   So I am making my own system which is mainly based on DnD and PTU.
+                   Still a work in progress, but enough progress has been made to justify putting it on the website.
+                   Most of the work is currently in a long Google Doc, but putting more finalized ideas here (and to better organize them).
+                   <br>
+                   <br>
+                   At some point the name will change, "Landon's Pokemon TTRPG" is the temparary name.
+                </p>
+
+                <div id="overview">
+                    <h2>Overview</h2>
+                    <p>Make a TTRPG for Pokemon. 
+                       Many have tried and although they haven’t failed, I (Landon) dislike their systems. 
+                       Many feel clucky to use and others have a lot of paperwork and number crunching. 
+                       I want to make a Pokemon TTRPG that is simple, straightforward, and fun. 
+                       The system will be a Mystery Dungeon system, where players are the Pokemon.
+                    </p>
+                    
+                </div>
+                
+                <div id="systemBasics">
+                    <h2>System Basics</h2>
+                    <p>Players have stats similar to base Pokemon (HP, Atk, Def, Sp. Atk, Sp. Def, Speed) to not be overwhelming to new players and to be familiar with players already associated with Pokemon to understand the system more easily.
+                       Players have skills that are improved separately (similarly to PTU) with a d6 system.
+                       Players can also choose classes that give them more features to use during gameplay.
+                    </p>
+                </div>
+                
+                <div id="systemName">
+                    <h2>System Name Suggestions</h2>
+                    <ul>
+                        <li>Landon's Pokemon Tabletop Role Playing Game (LPTRPG)
+                            <ul>
+                                <li>Temparary name</li>
+                                <li>Too long</li>
+                                <li>Need something catchy</li>
+                            </ul>
+                        </li>
+                        <li>PokéQuest (PQ)
+                            <ul>
+                                <li>Thanks ChatGTP</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div id="terminology">
+                    <h2>Terminology</h2>
+                    <table>
+                        <tr>
+                            <th>Game Master (GM)</th>
+                            <td>The Player designated to oversee the rules of play and guide the other players through the game</td>
+                        </tr>
+                        <tr>
+                            <th>Player Character (PC)</th>
+                            <td>A character within the game that is being directly controlled and played by a Player who is not the GM</td>
+                        </tr>
+                        <tr>
+                            <th>Non-Player Character (NPC)</th>
+                            <td>A character within the game that is not directly controlled by a Player but is usually controlled by the GM</td>
+                        </tr>
+                        <tr>
+                            <th>Abilities</th>
+                            <td>Things that a PC can do. Abilities come from a variety of places such as Moves, Classes, and Feats</td>
+                        </tr>
+                        <tr>
+                            <th>Stats</th>
+                            <td>Combat-centered information related to a PC, referring specifically to HP, Atk, Sp. Atk, Def, Sp. Def, and Speed</td>
+                        </tr>
+                        <tr>
+                            <th>Moves</th>
+                            <td>An ability gained through level up and is based on the PC’s Pokemon species move table</td>
+                        </tr>
+                        <tr>
+                            <th>Pokemon Abilities</th>
+                            <td>A special property of a PC that is typically tied to the Pokemon species the Player chooses</td>
+                        </tr>
+                        <tr>
+                            <th>Skills</th>
+                            <td>Role Playing-centered information related to a PC, such as Acrobatics, Insight, and Performance</td>
+                        </tr>
+                        <tr>
+                            <th>Class</th>
+                            <td>A skillset of Feats that PCs gained separately from the PC’s Pokemon species</td>
+                        </tr>
+                        <tr>
+                            <th>Feats</th>
+                            <td>An ability gained under a Class</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                
+            </div>
+            
         </div>
         
         <!-- Function that adds the navigation bar content -->
-        <script>updateNavBar();</script>
+        <script>
+            updateNavBar();
+            updatePokeTTRPGNavBar();
+        </script>
         
     </body>
 </html>

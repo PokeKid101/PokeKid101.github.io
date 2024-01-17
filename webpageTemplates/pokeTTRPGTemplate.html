@@ -3,23 +3,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>Title of Webpage</title>
+        <title>Poke TTRPG | Page Name</title>
         <link rel="icon" type="image/x-icon" href="../ShinyL Rotom.png">
         <link rel="stylesheet" href="../mainStyle.css">
         <script src="../loadNavigationBar/loadNavBar.js"></script>
+        <script src="../pokeTTRPG/pokeTTRPGNavigation.js"></script>
         
     </head>
     <body>
         <!-- Place holder for the navigation bar -->
         <!-- Content added with JavaScript -->
         <div id="navigationBar"></div>
+        <div id="pokeTTRPGNavigationBar" class="subNavigation"></div>
         
         <div id="pageContent">
-            <h1></h1>>
+            
+            <div id="title">
+                <h1>Landon's Pokemon TTRPG | Page Name</h1>
+                <p>Page description
+                   Here                
+                </p>
+
+            </div>
+            
+
         </div>
         
         <!-- Function that adds the navigation bar content -->
-        <script>updateNavBar();</script>
+        <script>
+            updateNavBar();
+            updatePokeTTRPGNavBar();
+        </script>
         
     </body>
 </html>
